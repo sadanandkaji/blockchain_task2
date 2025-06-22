@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/marks_card_gen_backend"
+]
+resolver = "2"

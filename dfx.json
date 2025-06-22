@@ -1,0 +1,38 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "frontend": {},
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      },
+      "type": "custom",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+    },
+    "marks_card_gen_backend": {
+      "candid": "src/marks_card_gen_backend/marks_card_gen_backend.did",
+      "package": "marks_card_gen_backend",
+      "type": "rust"
+    },
+    "marks_card_gen_frontend": {
+      "dependencies": [
+        "marks_card_gen_backend"
+      ],
+      "source": [
+        "src/marks_card_gen_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "marks_card_gen_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
