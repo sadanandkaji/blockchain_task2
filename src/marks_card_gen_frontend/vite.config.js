@@ -41,4 +41,7 @@ export default defineConfig({
     ],
     dedupe: ['@dfinity/agent'],
   },
+   css: {
+    postcss: './postcss.config.js',  // Ensure this exists
+  },
 });
